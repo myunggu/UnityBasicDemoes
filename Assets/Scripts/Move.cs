@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class zzz : MonoBehaviour
+public class Move : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+ 
     // Update is called once per frame
     void Update()
     {
-        
+        GetComponent<RectTransform>().anchoredPosition += new Vector2(1, 0) * 50 * Time.deltaTime;
     }
 }
